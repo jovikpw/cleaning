@@ -11,10 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Auth::routes();
 
-Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get( '/{path?}', function(){
+//     return view( 'welcome' );
+// } )->where('path', '.*');
+
+Route::get( '/{path?}', 'ReactRouter@show')->where('path', '.*');

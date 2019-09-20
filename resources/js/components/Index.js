@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Header, Footer, Home, About } from './';
+import Header from './Header';
+import Footer from './Footer';
+
 export default class Index extends Component {
     render() {
         return (
             <div className="container">
                 <Header/>
-                <Home/>
-                <About/>
-                <div className="row justify-content-center">
+                {/* <div className="row justify-content-center">
                     <div className="col-md-8">
                         <div className="card">
                             <div className="card-header">Landing Component</div>
@@ -16,7 +16,7 @@ export default class Index extends Component {
                             <div className="card-body">I'm an Landing component!</div>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <Footer />
             </div>
         );

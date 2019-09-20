@@ -6,6 +6,7 @@ export default class About extends Component {
         return (
             <div>
                 This is a About!
+                sadaddadadaddsada
             </div>
         );
     }
